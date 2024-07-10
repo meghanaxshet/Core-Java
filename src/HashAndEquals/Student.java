@@ -2,7 +2,7 @@ package HashAndEquals;
 
 public class Student {
     private Integer id;
-    private   String name;
+    private String name;
     private Integer marks;
 
     @Override
