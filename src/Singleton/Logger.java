@@ -2,15 +2,16 @@ package Singleton;
 
 public class Logger {
 
-    public static Logger instance;
 
     private Logger() {
 
     }
 
+    public static Logger instance;
+
     public static Logger getInstance() {
         if (Logger.instance == null) {
-            instance = new Logger();
+            instance = new Logger(); // lazy initialization
         }
         return instance;
     }
